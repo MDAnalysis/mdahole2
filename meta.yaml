@@ -1,0 +1,21 @@
+package:
+  name: mdakithole2
+  version: "0.1.0"
+
+source:
+  path: .
+  
+requirements:
+  channels:
+    - rulemaster
+    - conda-forge
+    - defaults
+  
+  build:
+    - python
+    - setuptools
+
+  run:
+    - python
+    - hole2
+    - mdanalysis

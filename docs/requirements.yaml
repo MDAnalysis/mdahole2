@@ -1,14 +1,9 @@
 name: mdakithole2-docs
 channels:
+  - conda-forge
+  - default
 dependencies:
-    # Base depends
   - python
   - pip
-
   - sphinx
-
   - sphinx_rtd_theme
-
-    # Pip-only installs
-  #- pip:
-
