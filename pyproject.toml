@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+  "setuptools >= 40.9.0",
+  "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdakithole2"
+description = "A Python interface for the HOLE suite tools to analyze an ion channel pore or transporter pathway as a function of time or arbitrary order parameters."
+license = {file = "LICENSE" }
+authors = [
+    {name = "Ian Kenney", email = "ikenney@asu.edu"},
+]
+maintainers = [
+    {name = "Ian Kenney", email = "ikenney@asu.edu"},
+]
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "MDAnalysis>=2.0.0",
+]
+keywords = [
+    "molecular simulations",
+]
+dynamic = [
+    "version",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=6.0",
+    "pytest-xdist>=2.5",
+    "pytest-cov>=3.0",
+]
+doc = [
+    "sphinx",
+    "sphinx_rtd_theme",
+]
+
+# [project.urls]
+# source = "https://github.com/ianmkenney/mdakithole2"
+# documentation = "https://mdakithole2.readthedocs.io"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = [
+    "mdakithole2/tests",
+]
