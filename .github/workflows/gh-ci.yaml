@@ -36,12 +36,13 @@ jobs:
           last-n-minor-release: 1
 
   main-tests:
-    if: "github.repository == 'ianmkenney/mdakithole2'"
+    if: "github.repository == 'ianmkenney/hole2-mdakit'"
     runs-on: ${{ matrix.os }}
     strategy:
         fail-fast: false
         matrix:
-          os: [macOS-latest, ubuntu-latest, windows-latest]
+          # os: [macOS-latest, ubuntu-latest, windows-latest]
+          os: [ubuntu-latest]
           python-version: ["3.8", "3.9", "3.10"]
           mdanalysis-version: ["latest", "develop"]
 
@@ -103,13 +104,14 @@ jobs:
     - name: codecov
       uses: codecov/codecov-action@v3
       with:
+        token: ${{ secrets.CODECOV_TOKEN }}
         file: coverage.xml
         name: codecov-${{ matrix.os }}-py${{ matrix.python-version }}
         verbose: True
 
 
   pylint_check:
-    if: "github.repository == 'ianmkenney/mdakithole2'"
+    if: "github.repository == 'ianmkenney/hole2-mdakit'"
     needs: environment-config
     runs-on: ubuntu-latest
 
@@ -135,7 +137,7 @@ jobs:
 
 
   pypi_check:
-    if: "github.repository == 'ianmkenney/mdakithole2'"
+    if: "github.repository == 'ianmkenney/hole2-mdakit'"
     needs: environment-config
     runs-on: ubuntu-latest
 
