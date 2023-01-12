@@ -34,8 +34,7 @@ conda activate mdakithole2
 Install the development and documentation dependencies:
 
 ```
-conda env update --name mdakithole2 --file devtools/conda-envs/test_env.yaml
-conda env update --name mdakithole2 --file docs/requirements.yaml
+conda env update --name mdakithole2 --file devtools/conda-envs/test_env.yaml --file docs/requirements.yaml
 ```
 
 Build this package from source:
