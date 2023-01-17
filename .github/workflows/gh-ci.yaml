@@ -36,7 +36,7 @@ jobs:
           last-n-minor-release: 1
 
   main-tests:
-    if: "github.repository == 'ianmkenney/hole2-mdakit'"
+    if: "github.repository == 'MDAnalysis/hole2-mdakit'"
     runs-on: ${{ matrix.os }}
     strategy:
         fail-fast: false
@@ -112,7 +112,7 @@ jobs:
 
 
   pylint_check:
-    if: "github.repository == 'ianmkenney/hole2-mdakit'"
+    if: "github.repository == 'MDAnalysis/hole2-mdakit'"
     needs: environment-config
     runs-on: ubuntu-latest
 
@@ -138,7 +138,7 @@ jobs:
 
 
   pypi_check:
-    if: "github.repository == 'ianmkenney/hole2-mdakit'"
+    if: "github.repository == 'MDAnalysis/hole2-mdakit'"
     needs: environment-config
     runs-on: ubuntu-latest
 

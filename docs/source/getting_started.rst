@@ -17,15 +17,15 @@ The `mdakithole2` source code is hosted on GitHub_ and can be downloaded with
 
 .. code:: bash
 
-	git clone git@github.com:ianmkenney/hole2-mdakit.git
+	git clone git@github.com:MDAnalysis/hole2-mdakit.git
 
 with an SSH key, or with
 
 .. code:: bash
 
-	git clone https://github.com/ianmkenney/hole2-mdakit.git
+	git clone https://github.com/MDAnalysis/hole2-mdakit.git
 
-.. _GitHub: https://github.com/ianmkenney/hole2-mdakit
+.. _GitHub: https://github.com/MDAnalysis/hole2-mdakit
 
 Build and installation
 ~~~~~~~~~~~~~~~~~~~~~~
