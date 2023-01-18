@@ -66,7 +66,7 @@ jobs:
         architecture: x64
 
         miniforge-variant: Mambaforge
-        uses-mamba: true
+        use-mamba: true
         channels: conda-forge, defaults
 
         activate-environment: mdakithole2-test
