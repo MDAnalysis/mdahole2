@@ -75,7 +75,8 @@ pip install -e ".[test,doc]"
 The mdakithole2 source code is hosted at https://github.com/MDAnalysis/hole2-mdakit
 and is available under the GNU General Public License, version 3 (see the file [LICENSE](https://github.com/MDAnalysis/hole2-mdakit/blob/main/LICENSE)).
 
-Copyright (c) 2022, Ian Kenney
+Copyright (c) 2022, The MDAnalysis Development Team and all contributors
+                    listed in the file AUTHORS
 
 
 #### Acknowledgements
