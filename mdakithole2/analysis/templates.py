@@ -21,7 +21,7 @@
 # J. Comput. Chem. 32 (2011), 2319--2327, doi:10.1002/jcc.21787
 #
 
-"""HOLE Analysis --- :mod:`MDAnalysis.analysis.hole2.templates`
+"""HOLE Analysis --- :mod:`mdakithole2.analysis.templates`
 ===============================================================
 
 :Author: Lily Wang
@@ -30,7 +30,7 @@
 
 .. versionadded:: 1.0
 
-Templates used in :mod:`MDAnalysis.analysis.hole2.hole`
+Templates used in :mod:`mdakithole2.analysis.hole`
 """
 
 exe_err = ('HOLE binary {name} not found. {name} must be on the '

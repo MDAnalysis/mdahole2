@@ -13,8 +13,6 @@ Welcome to mdakithole2's documentation!
    getting_started
    api
 
-
-
 Indices and tables
 ==================
 
