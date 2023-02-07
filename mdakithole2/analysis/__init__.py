@@ -268,7 +268,6 @@ Functions and classes
 
 .. bibliography::
     :filter: False
-    :style: MDA
 
     Smart1993
     Smart1996
