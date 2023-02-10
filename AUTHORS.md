@@ -57,8 +57,8 @@ The rules for this file:
 
 **2022**
 - Atharva Kulkarni <@Atharva7K>
-- manishsaini6421 <@manishsaini6421>
+- Manish Kumar <@manishsaini6421>
 - Matthijs Tadema <@mjtadema>
-- Tengyu <@miss77jun>
+- Tengyu Xie <@miss77jun>
 - Estefania Barreto-Ojeda <@ojeda-e>
 - Ian Kenney <@ianmkenney>
