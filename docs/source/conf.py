@@ -13,12 +13,12 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
 # Incase the project was not installed
-import mdakithole2
 import os
 import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 
+import mdakithole2
 # -- Project information -----------------------------------------------------
 
 project = 'mdakithole2'
