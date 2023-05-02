@@ -1,7 +1,6 @@
 name: mdakithole2-test
 channels: 
   - conda-forge 
-  - rulemaster
   - defaults
 dependencies:
   - python
