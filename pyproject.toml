@@ -16,7 +16,7 @@ maintainers = [
     {name = "Ian Kenney", email = "ikenney@asu.edu"},
 ]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.9"
 dependencies = [
     "MDAnalysis>=2.0.0",
 ]
