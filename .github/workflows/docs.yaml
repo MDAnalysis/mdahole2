@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - main
+  pull:
+    branches:
+      - main
 
 concurrency:
   group: "${{ github.ref }}-${{ github.head_ref }}"
@@ -43,6 +46,7 @@ jobs:
 
     - name: deploy docs
       uses: peaceiris/actions-gh-pages@v3
+      if: github.event_name != 'pull_request'
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./docs/build
