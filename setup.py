@@ -1,5 +1,5 @@
 """
-mdakithole2
+mdahole2
 A Python interface for the HOLE suite tools to analyze an ion channel pore or transporter pathway as a function of time or arbitrary order parameters.
 """
 import os
@@ -25,7 +25,7 @@ except:
 
 setup(
     # Self-descriptive entries which should always be present
-    name='mdakithole2',
+    name='mdahole2',
     author='Ian Kenney',
     author_email='ikenney@asu.edu',
     description=short_description,
@@ -53,7 +53,7 @@ setup(
         "mdanalysis>=2.0.0",
     ],
     # Additional entries you may want simply uncomment the lines you want and fill in the data
-    # url='mdakithole2.readthedocs.io/en/latest/',  # Website
+    # url='mdahole2.readthedocs.io/en/latest/',  # Website
     # platforms=['Linux',
     #            'Mac OS-X',
     #            'Unix',

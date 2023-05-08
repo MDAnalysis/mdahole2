@@ -39,10 +39,10 @@ from numpy.testing import (
 
 import MDAnalysis as mda
 from MDAnalysis.exceptions import ApplicationError
-from mdakithole2 import analysis as hole2
-from mdakithole2.analysis.templates import exe_err
-from mdakithole2.analysis.utils import check_and_fix_long_filename
-from mdakithole2.tests.datafiles import PDB_HOLE, MULTIPDB_HOLE, DCD
+from mdahole2 import analysis as hole2
+from mdahole2.analysis.templates import exe_err
+from mdahole2.analysis.utils import check_and_fix_long_filename
+from mdahole2.tests.datafiles import PDB_HOLE, MULTIPDB_HOLE, DCD
 
 
 def rlimits_missing():

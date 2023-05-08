@@ -1,6 +1,6 @@
 # Authors
 
-mdakithole2 was created by Ian Kenney in 2022.
+mdahole2 was created by Ian Kenney in 2022.
 
 
 All contributing authors are listed in this file below.

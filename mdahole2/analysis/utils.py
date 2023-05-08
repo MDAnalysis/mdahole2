@@ -23,7 +23,7 @@
 
 
 """
-HOLE Analysis --- :mod:`mdakithole2.analysis.utils`
+HOLE Analysis --- :mod:`mdahole2.analysis.utils`
 =========================================================
 
 :Author: Lily Wang
@@ -32,7 +32,7 @@ HOLE Analysis --- :mod:`mdakithole2.analysis.utils`
 
 .. versionadded:: 1.0
 
-Helper functions used in :mod:`mdakithole2.analysis.hole`
+Helper functions used in :mod:`mdahole2.analysis.hole`
 """
 import logging
 import tempfile
