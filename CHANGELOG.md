@@ -20,6 +20,7 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
+  * Ian Kenney <ianmkenney>
 
 ### Added
 <!-- New added features -->
@@ -28,7 +29,7 @@ The rules for this file:
 <!-- Bug fixes -->
 
 ### Changed
-<!-- Changes in existing functionality -->
+  * Package name changed from mdakithole2 to mdahole2
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
