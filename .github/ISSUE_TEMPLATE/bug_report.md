@@ -27,7 +27,7 @@ import mdakithole2
 
 ## Current environment ##
 
-- Which version are you using? (run `python -c "import mdakithole2; print(mdakithole2.__version__)"`)
+- Which version are you using? (run `python -c "import mdakithole2; print(mdahole2.__version__)"`)
 - Which version of Python (`python -V`)?
 - Which operating system?
 - What is the output of `pip list`?

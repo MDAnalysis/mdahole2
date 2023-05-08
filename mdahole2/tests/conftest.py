@@ -9,7 +9,7 @@ Global pytest fixtures
 
 import pytest
 
-from mdakithole2.data.files import MDANALYSIS_LOGO
+from mdahole2.data.files import MDANALYSIS_LOGO
 
 
 @pytest.fixture

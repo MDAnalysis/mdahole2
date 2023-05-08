@@ -18,10 +18,10 @@ import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 
-import mdakithole2
+import mdahole2
 # -- Project information -----------------------------------------------------
 
-project = 'mdakithole2'
+project = 'mdahole2'
 copyright = (
     "2022, Ian Kenney. "
     "Project structure based on the "
@@ -122,7 +122,7 @@ html_static_path = ['_static']
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'mdakithole2doc'
+htmlhelp_basename = 'mdahole2doc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -149,8 +149,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'mdakithole2.tex', 'mdakithole2 Documentation',
-     'mdakithole2', 'manual'),
+    (master_doc, 'mdahole2.tex', 'mdahole2 Documentation',
+     'mdahole2', 'manual'),
 ]
 
 
@@ -159,7 +159,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'mdakithole2', 'mdakithole2 Documentation',
+    (master_doc, 'mdahole2', 'mdahole2 Documentation',
      [author], 1)
 ]
 
@@ -170,8 +170,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'mdakithole2', 'mdakithole2 Documentation',
-     author, 'mdakithole2', 'A Python interface for the HOLE suite tools to analyze an ion channel pore or transporter pathway as a function of time or arbitrary order parameters.',
+    (master_doc, 'mdahole2', 'mdahole2 Documentation',
+     author, 'mdahole2', 'A Python interface for the HOLE suite tools to analyze an ion channel pore or transporter pathway as a function of time or arbitrary order parameters.',
      'Miscellaneous'),
 ]
 

@@ -69,7 +69,7 @@ jobs:
         use-mamba: true
         channels: conda-forge, defaults
 
-        activate-environment: mdakithole2-test
+        activate-environment: mdahole2-test
         auto-update-conda: true
         auto-activate-base: false
         show-channel-urls: true
@@ -100,7 +100,7 @@ jobs:
 
     - name: Run tests
       run: |
-        pytest -n 2 -v --cov=mdakithole2 --cov-report=xml --color=yes mdakithole2/tests/
+        pytest -n 2 -v --cov=mdahole2 --cov-report=xml --color=yes mdahole2/tests/
 
     - name: codecov
       uses: codecov/codecov-action@v3
@@ -134,7 +134,7 @@ jobs:
       env:
         PYLINTRC: .pylintrc
       run: |
-        pylint mdakithole2
+        pylint mdahole2
 
 
   pypi_check:
@@ -160,7 +160,7 @@ jobs:
 
     - name: Check package build
       run: |
-        DISTRIBUTION=$(ls -t1 dist/mdakithole2-*.tar.gz | head -n 1)
-        test -n "${DISTRIBUTION}" || { echo "no distribution dist/mdakithole2-*.tar.gz found"; exit 1; }
+        DISTRIBUTION=$(ls -t1 dist/mdahole2-*.tar.gz | head -n 1)
+        test -n "${DISTRIBUTION}" || { echo "no distribution dist/mdahole2-*.tar.gz found"; exit 1; }
         echo "twine check $DISTRIBUTION"
         twine check $DISTRIBUTION
