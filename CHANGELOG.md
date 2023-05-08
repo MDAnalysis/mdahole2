@@ -19,19 +19,25 @@ The rules for this file:
 ## [Unreleased]
 
 ### Authors
-<!-- GitHub usernames of contributors to this release -->
 
 ### Added
-<!-- New added features -->
 
 ### Fixed
-<!-- Bug fixes -->
 
 ### Changed
-<!-- Changes in existing functionality -->
 
 ### Deprecated
-<!-- Soon-to-be removed features -->
 
 ### Removed
-<!-- Removed features -->
+
+## [0.2.0] - 2023-05-04
+
+### Authors
+<!-- GitHub usernames of contributors to this release -->
+  * Ian M. Kenney <ianmkenney>
+
+### Added
+  * Installation of hole2 through conda-forge
+
+### Removed
+  * Support for Python versions < 3.9
