@@ -1,19 +1,19 @@
 Getting Started
 ===============
 
-This page details how to get started with `mdakithole2`.
+This page details how to get started with `mdahole2`.
 
 Documentation
 ~~~~~~~~~~~~~
 
 Documentation is hosted on `Read the Docs`_.
 
-.. _`Read the Docs`: https://mdakithole2.readthedocs.io/en/latest/
+.. _`Read the Docs`: https://mdahole2.readthedocs.io/en/latest/
 
 Download source code
 ~~~~~~~~~~~~~~~~~~~~
 
-The `mdakithole2` source code is hosted on GitHub_ and can be downloaded with
+The `mdahole2` source code is hosted on GitHub_ and can be downloaded with
 
 .. code:: bash
 
@@ -30,7 +30,7 @@ with an SSH key, or with
 Build and installation
 ~~~~~~~~~~~~~~~~~~~~~~
 
-`mdakithole2` is currently only installable from source (although hosting on conda-forge is planned).
+`mdahole2` is currently only installable from source (although hosting on conda-forge is planned).
 As such `conda-build` is required. To download this utility, invoke:
 
 .. code:: bash
@@ -41,6 +41,6 @@ From the repository root directory, run
 
 .. code:: bash
 
-	conda build . && conda install --use-local mdakithole2
+	conda build . && conda install --use-local mdahole2
 
 to build the package and install the local build.

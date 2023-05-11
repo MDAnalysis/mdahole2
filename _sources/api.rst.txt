@@ -1,7 +1,7 @@
 API Documentation
 =================
 ===================================================
- HOLE analysis --- :mod:`mdakithole2.analysis`
+ HOLE analysis --- :mod:`mdahole2.analysis`
 ===================================================
 
 :Author: Lily Wang
@@ -13,7 +13,7 @@ API Documentation
 This module provides an updated interface for the HOLE_ suite of tools
 :cite:p:`Smart1993,Smart1996` to analyse an ion channel pore or transporter
 pathway :cite:p:`Stelzl2014` as a function of time or arbitrary order
-parameters. It replaces :mod:`mdakithole2.analysis.hole`.
+parameters. It replaces :mod:`mdahole2.analysis.hole`.
 
 HOLE_ must be installed separately and can be obtained in binary form
 from http://www.holeprogram.org/ or as source from
@@ -23,10 +23,10 @@ under the Apache v2.0 license.)
 Module
 ------
 
-.. automodule:: mdakithole2.analysis
+.. automodule:: mdahole2.analysis
 
-.. automodule:: mdakithole2.analysis.utils
+.. automodule:: mdahole2.analysis.utils
    :members:
 
-.. automodule:: mdakithole2.analysis.templates
+.. automodule:: mdahole2.analysis.templates
    :members:
