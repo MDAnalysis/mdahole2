@@ -13,4 +13,4 @@ comment:
   flags: null
   paths: null
 ignore:
-  - "mdakithole2/_version.py"
+  - "mdahole2/_version.py"

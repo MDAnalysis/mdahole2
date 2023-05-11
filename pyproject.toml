@@ -6,7 +6,7 @@ requires = [
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mdakithole2"
+name = "mdahole2"
 description = "A Python interface for the HOLE suite tools to analyze an ion channel pore or transporter pathway as a function of time or arbitrary order parameters."
 license = {file = "LICENSE" }
 authors = [
@@ -39,11 +39,11 @@ doc = [
 ]
 
 # [project.urls]
-# source = "https://github.com/MDAnalysis/mdakithole2"
-# documentation = "https://mdakithole2.readthedocs.io"
+# source = "https://github.com/MDAnalysis/hole2-mdakit"
+# documentation = "https://mdahole2.readthedocs.io"
 
 [tool.pytest.ini_options]
 minversion = "6.0"
 testpaths = [
-    "mdakithole2/tests",
+    "mdahole2/tests",
 ]

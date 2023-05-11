@@ -652,7 +652,7 @@ Also add information on how to contact you by electronic and paper mail.
   If the program does terminal interaction, make it output a short
 notice like this when it starts in an interactive mode:
 
-    mdakithole2  Copyright (C) 2012-2023  Oliver Beckstein, Jinju Lu, Tyler Reddy, Elizabeth Denning, Manuel Nuno Melo, Richard Gowers, Sébastien Buchoux, Gorman Stock, David Dotson, Max Linke, Sean L. Seyler, Jonathan Barnoud, Matteo Tiberti, Mateusz Bieniek, João M.C. Teixeira, Rocco Meli, Irfan Alibay, Lily Wang, Paul Smith, Philip Loche, Atharva Kulkarni, Manish Kumar, Matthijs Tadema, Tengyu Xie, Estefania Barreto-Ojeda, Ian Kenney
+    mdahole2  Copyright (C) 2012-2023  Oliver Beckstein, Jinju Lu, Tyler Reddy, Elizabeth Denning, Manuel Nuno Melo, Richard Gowers, Sébastien Buchoux, Gorman Stock, David Dotson, Max Linke, Sean L. Seyler, Jonathan Barnoud, Matteo Tiberti, Mateusz Bieniek, João M.C. Teixeira, Rocco Meli, Irfan Alibay, Lily Wang, Paul Smith, Philip Loche, Atharva Kulkarni, Manish Kumar, Matthijs Tadema, Tengyu Xie, Estefania Barreto-Ojeda, Ian Kenney
   
     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
     This is free software, and you are welcome to redistribute it

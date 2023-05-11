@@ -4,7 +4,7 @@ Location of data files
 
 Use as ::
 
-    from mdakithole2.data.files import *
+    from mdahole2.data.files import *
 
 """
 
