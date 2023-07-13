@@ -303,7 +303,7 @@ will use as the topology in VMD):</p>
 <p>Then write the actual trajectory in a convenient format such as TRR (or
 DCD). Note that we apply the same slicing (<code class="docutils literal notranslate"><span class="pre">start=1</span></code>, <code class="docutils literal notranslate"><span class="pre">stop=9</span></code>, <code class="docutils literal notranslate"><span class="pre">step=2</span></code>)
 to the trajectory itself and then use it as the value for the <code class="docutils literal notranslate"><span class="pre">frames</span></code>
-parameter of <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.write" title="(in MDAnalysis v2.4.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AtomGroup.write</span></code></a>
+parameter of <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.write" title="(in MDAnalysis v2.5.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AtomGroup.write</span></code></a>
 method:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">u</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;subsampled.trr&quot;</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="n">u</span><span class="o">.</span><span class="n">trajectory</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
@@ -1003,7 +1003,7 @@ to an integer.</p></li>
 <dt class="label" id="create-vmd-surface-function"><span class="brackets"><a class="fn-backref" href="#id5">1</a></span></dt>
 <dd><p>If you use the <a class="reference internal" href="#mdahole2.analysis.hole" title="mdahole2.analysis.hole"><code class="xref py py-class docutils literal notranslate"><span class="pre">hole</span></code></a> class to run
 <strong class="program">hole</strong> on a single PDB file then you can use
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/hole2.html#MDAnalysis.analysis.hole2.utils.create_vmd_surface" title="(in MDAnalysis v2.4.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">MDAnalysis.analysis.hole2.utils.create_vmd_surface()</span></code></a>
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/hole2.html#MDAnalysis.analysis.hole2.utils.create_vmd_surface" title="(in MDAnalysis v2.5.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">MDAnalysis.analysis.hole2.utils.create_vmd_surface()</span></code></a>
 function to manually run <strong class="program">sph_process</strong> and
 <strong class="program">sos_triangle</strong> on the output files andcr eate a surface
 file.</p>
@@ -1026,7 +1026,7 @@ DCD is recognized. In particular, At the moment, DCDs generated
 with MDAnalysis are not accepted by HOLE. To overcome this
 PDB / DCD limitation, use <a class="reference internal" href="#mdahole2.analysis.HoleAnalysis" title="mdahole2.analysis.HoleAnalysis"><code class="xref py py-class docutils literal notranslate"><span class="pre">HoleAnalysis</span></code></a> which creates
 temporary PDB files for each frame of a
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.4.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a> or
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.5.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a> or
 <code class="xref py py-class docutils literal notranslate"><span class="pre">AtomGroup</span></code> and runs
 :func:<code class="docutils literal notranslate"><span class="pre">hole</span></code> on each of them.</p>
 </dd>
