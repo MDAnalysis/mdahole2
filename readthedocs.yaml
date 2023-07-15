@@ -11,7 +11,8 @@ python:
   install:
     - method: pip
       path: .
-    - requirements: docs/pip_requirements.txt
+    - method: pip
+      path: msmb_theme
 
 conda:
   environment: docs/requirements.yaml
