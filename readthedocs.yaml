@@ -6,6 +6,8 @@ build:
   os: ubuntu-22.04
   tools:
     python: "mambaforge-4.10"
+  commands:
+    - pip install msmb_theme
 
 python:
   install:
