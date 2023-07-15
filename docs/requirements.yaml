@@ -1,0 +1,10 @@
+name: mdahole2-docs
+channels:
+  - conda-forge
+  - default
+dependencies:
+  - pip
+  - python
+  - sphinx==5.3.0
+  - sphinx_rtd_theme
+  - sphinxcontrib-bibtex
