@@ -6,9 +6,9 @@ This page details how to get started with `mdahole2`.
 Documentation
 ~~~~~~~~~~~~~
 
-Documentation is hosted on `Read the Docs`_.
+Documentation is hosted on `GitHub Pages`_.
 
-.. _`Read the Docs`: https://mdahole2.readthedocs.io/en/latest/
+.. _`GitHub Pages`: https://www.mdanalysis.org/hole2-mdakit/
 
 Download source code
 ~~~~~~~~~~~~~~~~~~~~
