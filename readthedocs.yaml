@@ -11,8 +11,7 @@ python:
   install:
     - method: pip
       path: .
-    - method: pip
-      path: docs/pip_requirements.txt
+    - requirements: docs/pip_requirements.txt
 
 conda:
   environment: docs/requirements.yaml
