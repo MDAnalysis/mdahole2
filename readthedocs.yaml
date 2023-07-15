@@ -12,7 +12,7 @@ python:
     - method: pip
       path: .
     - method: pip
-      path: docs/pip_requirements.yaml
+      path: docs/pip_requirements.txt
 
 conda:
-  environment: docs/requirements.txt
+  environment: docs/requirements.yaml
