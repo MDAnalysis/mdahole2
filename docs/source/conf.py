@@ -18,7 +18,10 @@ import sys
 sys.path.insert(0, os.path.abspath('../..'))
 
 
+from collections import OrderedDict
 import mdahole2
+import msmb_theme
+import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'mdahole2'
@@ -95,7 +98,75 @@ pygments_style = 'default'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'msmb_theme'
+
+html_theme_path = [
+    msmb_theme.get_html_theme_path(),
+    sphinx_rtd_theme.get_html_theme_path()
+]
+
+# styles/fonts to match http://mdanalysis.org (see public/css)
+#
+# /* MDAnalysis orange: #FF9200 */
+# /* MDAnalysis gray: #808080 */
+# /* MDAnalysis white: #FFFFFF */
+# /* MDAnalysis black: #000000 */
+
+color = {'orange': '#FF9200',
+         'gray': '#808080',
+         'white': '#FFFFFF',
+         'black': '#000000', }
+
+extra_nav_links = OrderedDict()
+extra_nav_links['MDAnalysis'] = 'http://mdanalysis.org'
+extra_nav_links['docs'] = 'http://docs.mdanalysis.org'
+extra_nav_links['wiki'] = 'http://wiki.mdanalysis.org'
+extra_nav_links['user discussion group'] = 'http://users.mdanalysis.org'
+extra_nav_links['GitHub'] = 'https://github.com/mdanalysis'
+extra_nav_links['@mdanalysis'] = 'https://twitter.com/mdanalysis'
+
+html_theme_options = {
+    'canonical_url': '',
+    'logo_only': True,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': False,
+    'style_nav_header_background': 'white',  # '#e76900', # dark orange
+    # Toc options
+    'collapse_navigation': True,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False,
+}
+
+
+# The name of an image file (within the static path) to use as favicon of the
+# docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
+# pixels large.
+html_favicon = "_static/logos/mdanalysis-logo.ico"
+html_logo = '_static/logos/mdanalysis-logo-thin.png'
+
+# html_context = {
+#     'versions_json_url': 'https://userguide.mdanalysis.org/versions.json'
+# }
+
+# Add any paths that contain custom static files (such as style sheets) here,
+# relative to this directory. They are copied after the builtin static files,
+# so a file named "default.css" will overwrite the builtin "default.css".
+html_static_path = ['_static']
+html_css_files = ['custom.css']  # , 'readable.css']
+
+# Custom sidebar templates, maps document names to template names.
+# alabaster sidebars
+html_sidebars = {
+    '**': [
+        'about.html',
+        'navigation.html',
+        'relations.html',
+        'searchbox.html',
+    ]
+}
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the

@@ -38,7 +38,7 @@ jobs:
 
     - name: install dependencies
       run: |
-        pip install MDAnalysis
+        pip install MDAnalysis msmb_theme
 
     - name: build docs
       run: |
