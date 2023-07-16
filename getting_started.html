@@ -6,7 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting Started &mdash; mdahole2  documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/msmb.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/mdanalysis-logo.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,6 +19,7 @@
         <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
         <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/js/versions.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -28,12 +31,13 @@
   <div class="wy-grid-for-nav">
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search" >
+        <div class="wy-side-nav-search"  style="background: white" >
 
           
           
-          <a href="index.html" class="icon icon-home">
-            mdahole2
+          <a href="index.html">
+            
+              <img src="_static/mdanalysis-logo-thin.png" class="logo" alt="Logo"/>
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -58,7 +62,7 @@
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">mdahole2</a>
       </nav>
@@ -79,14 +83,14 @@
            <div itemprop="articleBody">
              
   <section id="getting-started">
-<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading"></a></h1>
+<h1>Getting Started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h1>
 <p>This page details how to get started with <cite>mdahole2</cite>.</p>
 <section id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading"></a></h2>
-<p>Documentation is hosted on <a class="reference external" href="https://mdahole2.readthedocs.io/en/latest/">Read the Docs</a>.</p>
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this heading">¶</a></h2>
+<p>Documentation is hosted on <a class="reference external" href="https://www.mdanalysis.org/hole2-mdakit/">GitHub Pages</a>.</p>
 </section>
 <section id="download-source-code">
-<h2>Download source code<a class="headerlink" href="#download-source-code" title="Permalink to this heading"></a></h2>
+<h2>Download source code<a class="headerlink" href="#download-source-code" title="Permalink to this heading">¶</a></h2>
 <p>The <cite>mdahole2</cite> source code is hosted on <a class="reference external" href="https://github.com/MDAnalysis/hole2-mdakit">GitHub</a> and can be downloaded with</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:MDAnalysis/hole2-mdakit.git
 </pre></div>
@@ -97,7 +101,7 @@
 </div>
 </section>
 <section id="build-and-installation">
-<h2>Build and installation<a class="headerlink" href="#build-and-installation" title="Permalink to this heading"></a></h2>
+<h2>Build and installation<a class="headerlink" href="#build-and-installation" title="Permalink to this heading">¶</a></h2>
 <p><cite>mdahole2</cite> is currently only installable from source (although hosting on conda-forge is planned).
 As such <cite>conda-build</cite> is required. To download this utility, invoke:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>conda-build
@@ -125,9 +129,6 @@ As such <cite>conda-build</cite> is required. To download this utility, invoke:<
     <p>&#169; Copyright 2022, Ian Kenney. Project structure based on the MDAnalysis Cookiecutter version 0.1.</p>
   </div>
 
-  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    provided by <a href="https://readthedocs.org">Read the Docs</a>.
   
  
 <div class="footer"><p>Please see
@@ -144,6 +145,24 @@ As such <cite>conda-build</cite> is required. To download this utility, invoke:<
     </section>
   </div>
   <script>
+    var versions_json_url = ''
+</script>
+
+<div class="rst-versions" data-toggle="rst-versions" role="note"
+     aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"></span>
+        
+      <span class="fa fa-caret-down"></span>
+    </span>
+
+    <div class="rst-other-versions">
+        <dl id="versionselector">
+            <dt>Other Versions</dt>
+        </dl>
+
+    </div>
+</div><script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
