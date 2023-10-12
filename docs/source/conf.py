@@ -20,8 +20,6 @@ sys.path.insert(0, os.path.abspath('../..'))
 
 from collections import OrderedDict
 import mdahole2
-import msmb_theme
-import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'mdahole2'
@@ -56,6 +54,7 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.ext.extlinks',
     'sphinxcontrib.bibtex',
+    'mdanalysis_sphinx_theme',
 ]
 
 bibtex_bibfiles = ['references.bib']
@@ -98,12 +97,7 @@ pygments_style = 'default'
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'msmb_theme'
-
-html_theme_path = [
-    msmb_theme.get_html_theme_path(),
-    sphinx_rtd_theme.get_html_theme_path()
-]
+html_theme = 'mdanalysis_sphinx_theme'
 
 # styles/fonts to match http://mdanalysis.org (see public/css)
 #
@@ -126,18 +120,7 @@ extra_nav_links['GitHub'] = 'https://github.com/mdanalysis'
 extra_nav_links['@mdanalysis'] = 'https://twitter.com/mdanalysis'
 
 html_theme_options = {
-    'canonical_url': '',
-    'logo_only': True,
-    'display_version': True,
-    'prev_next_buttons_location': 'bottom',
-    'style_external_links': False,
-    'style_nav_header_background': 'white',  # '#e76900', # dark orange
-    # Toc options
-    'collapse_navigation': True,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False,
+    'mda_official': True,
 }
 
 
@@ -249,6 +232,6 @@ texinfo_documents = [
 
 # -- Extension configuration -------------------------------------------------
 intersphinx_mapping = {
-    'https://docs.python.org/3/': None,
-    'https://docs.mdanalysis.org/stable/': None,
+    "python": ('https://docs.python.org/3/', None),
+    "mdanalysis": ('https://docs.mdanalysis.org/stable/', None),
 }
