@@ -48,10 +48,12 @@ The rules for this file:
 
 ## [0.2.0] -- 2023-05-04
 
-mdakithole2 was created by Ian Kenney in 2022. The package is based on the
-hole2 sub-package of MDAnalysis (MDAnalysis.analysis.hole2), originally
-authored by Lily Wang in 2020. Additional contributors between these times
-are reflected in the AUTHORS.md contained in this repository.
+The original `MDAnalysis.analysis.hole2` was written by Lily Wang in 2020 and
+had been part of MDAnalysis since release 1.0.0,
+https://docs.mdanalysis.org/2.6.1/documentation_pages/analysis/hole2.html.
+Ian Kenney created the `mdakithole2` MDAKit in 2022, based on the original code
+in MDAnalysis. Additional contributors to the original source code are listed
+in the AUTHORS.md file.
 
 ### Authors
 - ianmkenney
