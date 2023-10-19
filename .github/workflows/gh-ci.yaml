@@ -43,7 +43,7 @@ jobs:
         matrix:
           # os: [macOS-latest, ubuntu-latest, windows-latest]
           os: [ubuntu-latest, macOS-latest]
-          python-version: ["3.9", "3.10", "3.11"]
+          python-version: ["3.9", "3.10", "3.11", "3.12"]
           mdanalysis-version: ["latest", "develop"]
 
     steps:
