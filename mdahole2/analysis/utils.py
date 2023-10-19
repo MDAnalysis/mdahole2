@@ -41,10 +41,8 @@ import os
 import numpy as np
 import errno
 
-# from ...lib import util
 from MDAnalysis.lib import util
 from MDAnalysis.exceptions import ApplicationError
-# from ...exceptions import ApplicationError
 from .templates import (SIMPLE2_RAD, IGNORE_RESIDUES, hole_input,
                         hole_lines, exe_err)
 

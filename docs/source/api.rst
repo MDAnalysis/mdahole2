@@ -24,9 +24,3 @@ Module
 ------
 
 .. automodule:: mdahole2.analysis
-
-.. automodule:: mdahole2.analysis.utils
-   :members:
-
-.. automodule:: mdahole2.analysis.templates
-   :members:
