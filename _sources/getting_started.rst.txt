@@ -1,7 +1,8 @@
 Getting Started
 ===============
 
-This page details how to get started with `mdahole2`.
+This page details how to get started with ``mdahole2``.
+Note that ``mdahole2`` is only supported on Linux or macOS.
 
 Documentation
 ~~~~~~~~~~~~~
@@ -13,7 +14,7 @@ Documentation is hosted on `GitHub Pages`_.
 Download source code
 ~~~~~~~~~~~~~~~~~~~~
 
-The `mdahole2` source code is hosted on GitHub_ and can be downloaded with
+The ``mdahole2`` source code is hosted on GitHub_ and can be downloaded with
 
 .. code:: bash
 
@@ -30,8 +31,8 @@ with an SSH key, or with
 Build and installation
 ~~~~~~~~~~~~~~~~~~~~~~
 
-`mdahole2` is currently only installable from source (although hosting on conda-forge is planned).
-As such `conda-build` is required. To download this utility, invoke:
+``mdahole2`` is currently only installable from source (although hosting on conda-forge is planned).
+As such ``conda-build`` is required. To download this utility, invoke:
 
 .. code:: bash
 
