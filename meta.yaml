@@ -7,7 +7,6 @@ source:
   
 requirements:
   channels:
-    - rulemaster
     - conda-forge
     - defaults
   
