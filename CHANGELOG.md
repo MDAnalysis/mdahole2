@@ -20,7 +20,7 @@ The rules for this file:
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
-  * Ian Kenney <ianmkenney>
+- ianmkenney
 
 ### Added
 <!-- New added features -->
@@ -29,10 +29,45 @@ The rules for this file:
 <!-- Bug fixes -->
 
 ### Changed
-  * Package name changed from mdakithole2 to mdahole2
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
 
 ### Removed
 <!-- Removed features -->
+
+## [0.3.0] -- 2023-07-12
+
+### Authors
+- ianmkenney
+
+### Changed
+- bumped Python support from 3.8+ to 3.9+
+- test environment file now points to the conda-forge hole2 binary (#15)
+- package name shortened from mdakithole2 to mdahole2 (#21)
+
+## [0.2.0] -- 2023-05-04
+
+The original `MDAnalysis.analysis.hole2` was written by Lily Wang in 2020 and
+had been part of MDAnalysis since release 1.0.0,
+https://docs.mdanalysis.org/2.6.1/documentation_pages/analysis/hole2.html.
+Ian Kenney created the `mdakithole2` MDAKit in 2022, based on the original code
+in MDAnalysis. Additional contributors to the original source code are listed
+in the AUTHORS.md file.
+
+### Authors
+- ianmkenney
+- IAlibay
+
+### Added
+- the core functionality of hole2-mdakit (and its tests) was implemented
+  using the source code from MDAnalysis.analysis.hole2 (PR #1)
+- GitHub actions CI workflow (PR #2 #3 #7)
+- added historical authors from original source to AUTHORS.md (PR #4)
+- documentation deployed to github pages (PR #11)
+
+## Changed
+
+[Unreleased]: https://github.com/MDAnalysis/hole2-mdakit/compare/0.3.0...HEAD
+[0.3.0]: https://github.com/MDAnalysis/hole2-mdakit/compare/0.2.0...0.3.0
+[0.2.0]: https://github.com/MDAnalysis/hole2-mdakit/releases/tag/0.2.0
