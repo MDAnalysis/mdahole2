@@ -13,12 +13,14 @@ mdahole2 is bound by a [Code of Conduct](https://github.com/MDAnalysis/hole2-mda
 
 ### Installation
 
-To build mdahole2 from source,
+To build `mdahole2` from source,
 we highly recommend using virtual environments.
 If possible, we strongly recommend that you use
 [Anaconda](https://docs.conda.io/en/latest/) as your package manager.
 Below we provide instructions both for `conda` and
 for `pip`.
+
+Note that `mdahole2` is only supported on Linux and macOS.
 
 #### With conda
 

@@ -53,7 +53,7 @@ setup(
         "mdanalysis>=2.0.0",
     ],
     # Additional entries you may want simply uncomment the lines you want and fill in the data
-    # url='mdahole2.readthedocs.io/en/latest/',  # Website
+    url='https://www.mdanalysis.org/hole2-mdakit',
     # platforms=['Linux',
     #            'Mac OS-X',
     #            'Unix',

@@ -23,6 +23,7 @@ The rules for this file:
 - ianmkenney
 
 ### Added
+- mdahole2 confirmed to work on macOS and is now included in CI (PR #35)
 <!-- New added features -->
 
 ### Fixed
