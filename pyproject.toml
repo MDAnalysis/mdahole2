@@ -59,8 +59,8 @@ doc = [
 source = "https://github.com/MDAnalysis/hole2-mdakit"
 documentation = "https://www.mdanalysis.org/hole2-mdakit/"
 
-[tools.setuptools.packages]
-find = {namespaces = false, exclude=["devtools", "docs"]}
+[tool.setuptools.packages]
+find = {namespaces = false, include=["mdahole2"], exclude=["devtools", "docs"]}
 
 [tool.pytest.ini_options]
 minversion = "6.0"
