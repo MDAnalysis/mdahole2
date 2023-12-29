@@ -1,7 +1,7 @@
 [build-system]
 requires = [
   "setuptools >= 40.9.0",
-  "wheel",
+  "versioningit",
 ]
 build-backend = "setuptools.build_meta"
 
@@ -10,10 +10,24 @@ name = "mdahole2"
 description = "A Python interface for the HOLE suite tools to analyze an ion channel pore or transporter pathway as a function of time or arbitrary order parameters."
 license = {file = "LICENSE" }
 authors = [
-    {name = "Ian Kenney", email = "ikenney@asu.edu"},
+    {name = "MDAnalysis", email = "mdanalysis@numfocus.org"},
 ]
 maintainers = [
-    {name = "Ian Kenney", email = "ikenney@asu.edu"},
+    {name = "MDAnalysis", email = "mdanalysis@numfocus.org"},
+]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+    "Programming Language :: C",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
 ]
 readme = "README.md"
 requires-python = ">=3.9"
@@ -22,6 +36,9 @@ dependencies = [
 ]
 keywords = [
     "molecular simulations",
+    "molecular dynamics",
+    "ion channel",
+    "transporter pathway",
 ]
 dynamic = [
     "version",
@@ -38,12 +55,29 @@ doc = [
     "sphinx_rtd_theme",
 ]
 
-# [project.urls]
-# source = "https://github.com/MDAnalysis/hole2-mdakit"
-# documentation = "https://mdahole2.readthedocs.io"
+[project.urls]
+source = "https://github.com/MDAnalysis/hole2-mdakit"
+documentation = "https://www.mdanalysis.org/hole2-mdakit/"
+
+[tools.setuptools.packages]
+find = {namespaces = false, exclude=["devtools", "docs"]}
 
 [tool.pytest.ini_options]
 minversion = "6.0"
 testpaths = [
     "mdahole2/tests",
 ]
+
+[tool.versioningit]
+default-version = "1+unknown"
+
+[tool.versioningit.vcs]
+method = "git"
+# the below line expects tags to look like '1.0.2'.
+# if prefixing with a v, e.g. 'v1.0.2', change it to ["v*"]
+match = ["*"]
+
+[tool.versioningit.format]
+distance = "{base_version}+{distance}.{vcs}{rev}"
+dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
+distance-dirty = "{base_version}+{distance}.{vcs}{rev}.dirty"
