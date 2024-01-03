@@ -28,7 +28,7 @@ jobs:
     outputs:
       stable-python-version: ${{ steps.get-python-version.outputs.python-version }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - id: get-python-version
         uses: MDAnalysis/get-latest-python-version@main
@@ -43,7 +43,7 @@ jobs:
         matrix:
           # os: [macOS-latest, ubuntu-latest, windows-latest]
           os: [ubuntu-latest, macOS-latest]
-          python-version: ["3.9", "3.10", "3.11"]
+          python-version: ["3.9", "3.10", "3.11", "3.12"]
           mdanalysis-version: ["latest", "develop"]
 
     steps:
@@ -117,7 +117,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -143,7 +143,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Python ${{ needs.environment-config.outputs.stable-python-version }}
       uses: actions/setup-python@v4
@@ -152,11 +152,11 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install setuptools cython numpy twine
+        pip install pipx twine
 
     - name: Build package
       run: |
-        python setup.py sdist
+        python -m pipx run build --sdist
 
     - name: Check package build
       run: |

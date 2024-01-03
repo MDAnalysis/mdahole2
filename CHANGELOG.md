@@ -21,8 +21,10 @@ The rules for this file:
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
 - ianmkenney
+- IAlibay
 
 ### Added
+- Support for Python 3.12 (PR #41)
 - mdahole2 confirmed to work on macOS and is now included in CI (PR #35)
 <!-- New added features -->
 
@@ -30,6 +32,7 @@ The rules for this file:
 <!-- Bug fixes -->
 
 ### Changed
+- Version handling is now handled via versioningit (PR #41)
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
