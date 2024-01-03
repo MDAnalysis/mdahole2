@@ -15,15 +15,17 @@
 </head>
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>API Documentation &mdash; mdahole2  documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/site.css" type="text/css" />
-      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/site.css" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=97281a00" />
+
+  
     <link rel="shortcut icon" href="_static/mdanalysis-logo.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -332,7 +334,7 @@ will use as the topology in VMD):</p>
 <p>Then write the actual trajectory in a convenient format such as TRR (or
 DCD). Note that we apply the same slicing (<code class="docutils literal notranslate"><span class="pre">start=1</span></code>, <code class="docutils literal notranslate"><span class="pre">stop=9</span></code>, <code class="docutils literal notranslate"><span class="pre">step=2</span></code>)
 to the trajectory itself and then use it as the value for the <code class="docutils literal notranslate"><span class="pre">frames</span></code>
-parameter of <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.write" title="(in MDAnalysis v2.6.1)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AtomGroup.write</span></code></a>
+parameter of <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.write" title="(in MDAnalysis v2.7.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AtomGroup.write</span></code></a>
 method:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">u</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;subsampled.trr&quot;</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="n">u</span><span class="o">.</span><span class="n">trajectory</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>
@@ -1015,6 +1017,7 @@ to an integer.</p></li>
 
 <p class="rubric">References</p>
 <div class="docutils container" id="id11">
+<div role="list" class="citation-list">
 <div class="citation" id="id52" role="doc-biblioentry">
 <span class="label"><span class="fn-bracket">[</span>SGW93<span class="fn-bracket">]</span></span>
 <span class="backrefs">(<a role="doc-backlink" href="#id1">1</a>,<a role="doc-backlink" href="#id3">2</a>)</span>
@@ -1034,16 +1037,16 @@ to an integer.</p></li>
 </div>
 <p class="rubric">Footnotes</p>
 <aside class="footnote-list brackets">
-<aside class="footnote brackets" id="create-vmd-surface-function" role="note">
+<aside class="footnote brackets" id="create-vmd-surface-function" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id5">1</a><span class="fn-bracket">]</span></span>
 <p>If you use the <a class="reference internal" href="#mdahole2.analysis.hole" title="mdahole2.analysis.hole"><code class="xref py py-class docutils literal notranslate"><span class="pre">hole</span></code></a> class to run
 <strong class="program">hole</strong> on a single PDB file then you can use
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/hole2.html#MDAnalysis.analysis.hole2.utils.create_vmd_surface" title="(in MDAnalysis v2.6.1)"><code class="xref py py-func docutils literal notranslate"><span class="pre">MDAnalysis.analysis.hole2.utils.create_vmd_surface()</span></code></a>
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/analysis/hole2.html#MDAnalysis.analysis.hole2.utils.create_vmd_surface" title="(in MDAnalysis v2.7.0)"><code class="xref py py-func docutils literal notranslate"><span class="pre">MDAnalysis.analysis.hole2.utils.create_vmd_surface()</span></code></a>
 function to manually run <strong class="program">sph_process</strong> and
 <strong class="program">sos_triangle</strong> on the output files andcr eate a surface
 file.</p>
 </aside>
-<aside class="footnote brackets" id="vmd-extra-frame" role="note">
+<aside class="footnote brackets" id="vmd-extra-frame" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></span>
 <span class="backrefs">(<a role="doc-backlink" href="#id7">1</a>,<a role="doc-backlink" href="#id8">2</a>)</span>
 <p>If you loaded your system in <a class="reference external" href="https://www.ks.uiuc.edu/Research/vmd/">VMD</a> from separate topology
@@ -1054,7 +1057,7 @@ file. Delete the initial frame with <span class="menuselection">Molecule ‣
 Delete Frames</span> by setting <em>First</em> to 0 and <em>Last</em> to 0 and
 selecting <span class="guilabel">Delete</span>.</p>
 </aside>
-<aside class="footnote brackets" id="holedcd" role="note">
+<aside class="footnote brackets" id="holedcd" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id9">3</a><span class="fn-bracket">]</span></span>
 <p>PDB files are not the only files that <strong class="program">hole</strong> can
 read. In principle, it is also able to read CHARMM DCD
@@ -1064,7 +1067,7 @@ DCD is recognized. In particular, At the moment, DCDs generated
 with MDAnalysis are not accepted by HOLE. To overcome this
 PDB / DCD limitation, use <a class="reference internal" href="#mdahole2.analysis.HoleAnalysis" title="mdahole2.analysis.HoleAnalysis"><code class="xref py py-class docutils literal notranslate"><span class="pre">HoleAnalysis</span></code></a> which creates
 temporary PDB files for each frame of a
-<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.6.1)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a> or
+<a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/universe.html#MDAnalysis.core.universe.Universe" title="(in MDAnalysis v2.7.0)"><code class="xref py py-class docutils literal notranslate"><span class="pre">Universe</span></code></a> or
 <code class="xref py py-class docutils literal notranslate"><span class="pre">AtomGroup</span></code> and runs
 :func:<code class="docutils literal notranslate"><span class="pre">hole</span></code> on each of them.</p>
 </aside>
