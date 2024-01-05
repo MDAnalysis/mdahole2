@@ -97,8 +97,9 @@ jobs:
         conda info
         conda list
 
-
     - name: Run tests
+      env:
+        DUECREDIT_ENABLE: 'yes'
       run: |
         pytest -n 2 -v --cov=mdahole2 --cov-report=xml --color=yes mdahole2/tests/
 
