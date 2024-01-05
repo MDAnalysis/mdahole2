@@ -305,20 +305,21 @@ Functions and classes
               :func:``hole`` on each of them.
 
 """
-from MDAnalysis.due import due, Doi
 from .hole import hole, HoleAnalysis
 from .utils import create_vmd_surface
 
+from MDAnalysis.due import due, Doi
+
 due.cite(Doi("10.1016/S0006-3495(93)81293-1"),
          description="HOLE program",
-         path="mdahole2.analysis.hole2",
+         path="mdahole2.analysis.hole",
          cite_module=True)
 due.cite(Doi("10.1016/S0263-7855(97)00009-X"),
          description="HOLE program",
-         path="mdahole2.analysis.hole2",
+         path="mdahole2.analysis.hole",
          cite_module=True)
 due.cite(Doi("10.1016/j.jmb.2013.10.024"),
          description="HOLE trajectory analysis with orderparameters",
-         path="mdahole2.analysis.hole2",
+         path="mdahole2.analysis.hole",
          cite_module=True)
 del Doi
