@@ -29,6 +29,7 @@ The rules for this file:
 <!-- New added features -->
 
 ### Fixed
+- Duecredit paths now point to mdahole2
 <!-- Bug fixes -->
 
 ### Changed
