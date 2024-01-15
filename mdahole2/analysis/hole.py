@@ -212,6 +212,19 @@ def hole(pdbfile,
 
     .. versionadded:: 1.0
 
+    .. [#HOLEDCD] PDB files are not the only files that :program:`hole` can
+              read. In principle, it is also able to read CHARMM DCD
+              trajectories and generate a hole profile for each frame. However,
+              native support for DCD in :program:`hole` is patchy and not every
+              DCD is recognized. In particular, At the moment, DCDs generated
+              with MDAnalysis are not accepted by HOLE. To overcome this
+              PDB / DCD limitation, use :class:`HoleAnalysis` which creates
+              temporary PDB files for each frame of a
+              :class:`~MDAnalysis.core.universe.Universe` or
+              :class:`~MDAnalysis.core.universe.AtomGroup` and runs
+              ``hole`` on each of them.
+
+
     """
     if output_level > 3:
         msg = 'output_level ({}) needs to be < 3 in order to extract a HOLE profile!'
