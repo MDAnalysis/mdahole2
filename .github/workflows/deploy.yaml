@@ -1,0 +1,53 @@
+name: Build and upload to PyPi
+
+on:
+  push:
+    tags:
+      - "*"
+  release:
+    types:
+      - published
+
+jobs:
+  testpypi_push:
+    environment:
+      name: deploy
+      url: https://test.pypi.org/p/mdahole2
+    permissions:
+      id-token: write
+    if: |
+      github.repository == 'MDAnalysis/hole2-mdakit' &&
+      (github.event_name == 'push' && startsWith(github.ref, 'refs/tags/'))
+    name: Build, upload and test pure Python wheels to TestPyPi
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: testpypi_deploy
+        uses: MDAnalysis/pypi-deployment@main
+        with:
+          test_submission: true
+          tests: false
+          package_name: 'mdahole2'
+
+  pypi_push:
+    environment:
+      name: deploy
+      url: https://pypi.org/p/mdahole2
+    permissions:
+      id-token: write
+    if: |
+      github.repository == 'MDAnalysis/hole2-mdakit' &&
+      (github.event_name == 'release' && github.event.action == 'published')
+    name: Build, upload and test pure Python wheels to PyPi
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: pypi_deploy
+        uses: MDAnalysis/pypi-deployment@main
+        with:
+          tests: false
+          package_name: 'mdahole2'
