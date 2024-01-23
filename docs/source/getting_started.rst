@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 This page details how to get started with ``mdahole2``.
-Note that ``mdahole2`` is only supported on Linux or macOS.
+Note that ``mdahole2`` is currently only supported on Linux or macOS.
 
 Documentation
 ~~~~~~~~~~~~~
