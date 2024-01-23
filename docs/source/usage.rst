@@ -11,10 +11,11 @@ Finding your hole executable
 
 The first step is to find your HOLE executable. If you have installed HOLE
 through ``conda-forge``, then you can find the executable path by searching
-``which hole``, e.g.:
+``which hole``. First ensure that you have activated the correct conda environment:
 
 .. code-block:: bash
 
+    $ conda activate mdahole2
     $ which hole
     /home/username/miniforge3/envs/mdahole2/bin/hole
 
