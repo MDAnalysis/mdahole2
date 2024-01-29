@@ -9,33 +9,30 @@ pathway :cite:p:`Stelzl2014`.
 Finding your hole executable
 ----------------------------
 
-The first step is to find your HOLE executable. If you have installed HOLE
-through ``conda-forge``, then you can find the executable path by searching
-``which hole``. First ensure that you have activated the correct conda environment:
+``mdahole2`` is a Python package that interfaces with the HOLE_ program.
+This necessitates having a HOLE executable on your system. 
+``mdahole2`` will be able to find your executable if it is on your ``PATH``,
+i.e. if it can be discovered by calling ``which hole``.
+However, if you have installed HOLE_ through a nonstandard pathway,
+then you will need to specify a path to your ``hole`` executable.
 
-.. code-block:: bash
-
-    $ conda activate mdahole2
-    $ which hole
-    /home/username/miniforge3/envs/mdahole2/bin/hole
-
+For example, if you installed HOLE from the original source,
 If you have installed HOLE from the original source, the executable
 may be in your home directory instead, e.g. a path such as ``~/hole2/exe/hole``.
 
 Throughout the rest of this documentation, we will assume that your executable
-is at ``~/miniforge3/envs/mdahole2/bin/hole``.
+is in your ``PATH``, and will not specify a path..
 
 
 Using HOLE on a PDB file
 ------------------------
 
-Use the ``hole`` function to run `HOLE`_ on a single PDB file. For example,
-the code below runs the `HOLE`_ program installed at `~/miniforge3/envs/mdahole2/bin/hole`::
+Use the ``hole`` function to run `HOLE`_ on a single PDB file. For example::
 
     from MDAnalysis.tests.datafiles import PDB_HOLE
     from mdahole2.analysis import hole
 
-    profiles = hole(PDB_HOLE, executable='~/miniforge3/envs/mdahole2/bin/hole')
+    profiles = hole(PDB_HOLE)
     # to create a VMD surface of the pore
     hole2.create_vmd_surface(filename='hole.vmd')
 
@@ -80,7 +77,7 @@ The class can be set-up and run like a normal MDAnalysis analysis class::
 
     u = mda.Universe(MULTIPDB_HOLE)
 
-    ha = HoleAnalysis(u, executable='~/miniforge3/envs/mdahole2/bin/hole') as h2:
+    ha = HoleAnalysis(u)
     ha.run()
     ha.create_vmd_surface(filename='hole.vmd')
 
@@ -101,7 +98,7 @@ call :meth:`~HoleAnalysis.delete_temporary_files`::
 Alternatively, you can use HoleAnalysis as a context manager that deletes
 temporary files when you are finished with the context manager::
 
-    with HoleAnalysis(u, executable='~/miniforge3/envs/mdahole2/bin/hole') as h2:
+    with HoleAnalysis(u) as h2:
         h2.run()
         h2.create_vmd_surface()
 
@@ -132,12 +129,12 @@ To analyze a full trajectory and write pore surfaces for all frames to file
 
     u = mda.Universe(MULTIPDB_HOLE)
 
-    with HoleAnalysis(u, executable='~/miniforge3/envs/mdahole2/bin/hole') as h2:
+    with HoleAnalysis(u) as h2:
         h2.run()
         h2.create_vmd_surface(filename="hole_surface.vmd")
 
 In VMD, load your trajectory and then in the tcl console
-(e.g.. :menuselection:`Extensions --> Tk Console`) load the surface
+(e.g. :menuselection:`Extensions --> Tk Console`) load the surface
 trajectory:
 
 .. code-block:: tcl
@@ -156,7 +153,7 @@ For example, if we want to start displaying at frame 1 (i.e., skip frame
 0), stop at frame 7, and only show every other frame (step 2) then the HOLE
 analysis will be ::
 
-    with HoleAnalysis(u, executable='~/miniforge3/envs/mdahole2/bin/hole') as h2:
+    with HoleAnalysis(u) as h2:
         h2.run(start=1, stop=9, step=2)
         h2.create_vmd_surface(filename="hole_surface_subsampled.vmd")
 
