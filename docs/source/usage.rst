@@ -11,17 +11,24 @@ Finding your hole executable
 
 ``mdahole2`` is a Python package that interfaces with the HOLE_ program.
 This necessitates having a HOLE executable on your system. 
-``mdahole2`` will be able to find your executable if it is on your ``PATH``,
+``mdahole2`` will be able to automatically find your executable if it is in your ``PATH``,
 i.e. if it can be discovered by calling ``which hole``.
-However, if you have installed HOLE_ through a nonstandard pathway,
-then you will need to specify a path to your ``hole`` executable.
+This should be the case for the vast majority of installations
+through the recommended pathway of ``conda-forge``.
 
-For example, if you installed HOLE from the original source,
-If you have installed HOLE from the original source, the executable
-may be in your home directory instead, e.g. a path such as ``~/hole2/exe/hole``.
+However, if you have installed HOLE_ through a nonstandard pathway,
+then you will need to specify a path to your ``hole`` executable like so::
+
+    from MDAnalysis.tests.datafiles import PDB_HOLE
+    from mdahole2.analysis import hole
+
+    profiles = hole(PDB_HOLE, executable='/path/to/hole')
+
+For example, if you installed HOLE from the original source, the executable
+may be in your home directory, e.g. a path such as ``~/hole2/exe/hole``.
 
 Throughout the rest of this documentation, we will assume that your executable
-is in your ``PATH``, and will not specify a path..
+is in your ``PATH``, and will not specify a different path.
 
 
 Using HOLE on a PDB file
