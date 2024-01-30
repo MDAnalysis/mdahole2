@@ -9,7 +9,7 @@ Documentation
 
 Documentation is hosted on `GitHub Pages`_.
 
-.. _`GitHub Pages`: https://www.mdanalysis.org/hole2-mdakit/
+.. _`GitHub Pages`: https://www.mdanalysis.org/mdahole2/
 
 Download source code
 ~~~~~~~~~~~~~~~~~~~~
@@ -18,15 +18,15 @@ The ``mdahole2`` source code is hosted on GitHub_ and can be downloaded with
 
 .. code:: bash
 
-	git clone git@github.com:MDAnalysis/hole2-mdakit.git
+	git clone git@github.com:MDAnalysis/mdahole2.git
 
 with an SSH key, or with
 
 .. code:: bash
 
-	git clone https://github.com/MDAnalysis/hole2-mdakit.git
+	git clone https://github.com/MDAnalysis/mdahole2.git
 
-.. _GitHub: https://github.com/MDAnalysis/hole2-mdakit
+.. _GitHub: https://github.com/MDAnalysis/mdahole2
 
 Build and installation
 ~~~~~~~~~~~~~~~~~~~~~~

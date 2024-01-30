@@ -56,8 +56,8 @@ doc = [
 ]
 
 [project.urls]
-source = "https://github.com/MDAnalysis/hole2-mdakit"
-documentation = "https://www.mdanalysis.org/hole2-mdakit/"
+source = "https://github.com/MDAnalysis/mdahole2"
+documentation = "https://www.mdanalysis.org/mdahole2/"
 
 [tool.setuptools.packages]
 find = {namespaces = false, include=["mdahole2"], exclude=["devtools", "docs"]}

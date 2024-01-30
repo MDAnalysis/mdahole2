@@ -77,6 +77,6 @@ in the AUTHORS.md file.
 
 ## Changed
 
-[Unreleased]: https://github.com/MDAnalysis/hole2-mdakit/compare/0.3.0...HEAD
-[0.3.0]: https://github.com/MDAnalysis/hole2-mdakit/compare/0.2.0...0.3.0
-[0.2.0]: https://github.com/MDAnalysis/hole2-mdakit/releases/tag/0.2.0
+[Unreleased]: https://github.com/MDAnalysis/mdahole2/compare/0.3.0...HEAD
+[0.3.0]: https://github.com/MDAnalysis/mdahole2/compare/0.2.0...0.3.0
+[0.2.0]: https://github.com/MDAnalysis/mdahole2/releases/tag/0.2.0

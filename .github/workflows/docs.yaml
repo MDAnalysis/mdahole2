@@ -17,7 +17,7 @@ defaults:
 
 jobs:
   docs:
-    if: "github.repository == 'MDAnalysis/hole2-mdakit'"
+    if: "github.repository == 'MDAnalysis/mdahole2'"
     runs-on: ubuntu-latest
 
     steps:
