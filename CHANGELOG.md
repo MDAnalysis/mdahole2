@@ -16,24 +16,28 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## [Unreleased]
+## [0.4.0] -- 2024-01-30
 
 ### Authors
 <!-- GitHub usernames of contributors to this release -->
 - ianmkenney
 - IAlibay
+- lilyminium
 
 ### Added
-- Support for Python 3.12 (PR #41)
+- Support for Python 3.12 (PR #42)
 - mdahole2 confirmed to work on macOS and is now included in CI (PR #35)
+- Added and updated documentation (PR #48, Issue #33)
 <!-- New added features -->
 
 ### Fixed
 - Duecredit paths now point to mdahole2
+- Updated to modern matplotlib ``get_cmap`` (PR #39)
 <!-- Bug fixes -->
 
 ### Changed
 - Version handling is now handled via versioningit (PR #41)
+- Switched to ``shutil.which`` instead of custom function (PR #41)
 
 ### Deprecated
 <!-- Soon-to-be removed features -->
