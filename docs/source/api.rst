@@ -8,8 +8,6 @@ API Documentation
 :Year: 2020
 :Copyright: GNU Public License v3
 
-.. versionadded:: 1.0.0
-
 This toolkit provides an updated interface for the HOLE_ suite of tools
 :cite:p:`Smart1993,Smart1996` to analyse an ion channel pore or transporter
 pathway :cite:p:`Stelzl2014` as a function of time or arbitrary order

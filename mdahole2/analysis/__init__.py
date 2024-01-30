@@ -28,8 +28,6 @@
 :Year: 2020
 :Copyright: GNU Public License v3
 
-.. versionadded:: 1.0.0
-
 """
 from .hole import hole, HoleAnalysis
 from .utils import create_vmd_surface
