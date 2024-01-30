@@ -4,7 +4,7 @@ mdahole2 was created by Ian Kenney in 2022.
 
 
 All contributing authors are listed in this file below.
-The repository history at https://github.com/MDAnalysis/hole2-mdakit
+The repository history at https://github.com/MDAnalysis/mdahole2
 and the CHANGELOG show individual code contributions.
 
 ## Chronological list of authors
