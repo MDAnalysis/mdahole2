@@ -2,7 +2,7 @@ Getting Started
 ===============
 
 This page details how to get started with ``mdahole2``.
-Note that ``mdahole2`` is only supported on Linux or macOS.
+Note that ``mdahole2`` is currently only supported on Linux or macOS.
 
 Documentation
 ~~~~~~~~~~~~~
@@ -45,3 +45,19 @@ From the repository root directory, run
 	conda build . && conda install --use-local mdahole2
 
 to build the package and install the local build.
+
+Installing hole2
+~~~~~~~~~~~~~~~~
+
+``mdahole2`` requires the ``hole2`` executable to be installed.
+
+This is most easily done using ``conda``, ``mamba``, or a similar
+package manager. For example, to install ``hole2`` using ``mamba``:
+
+.. code:: bash
+
+	mamba install -c conda-forge hole2
+
+Alternatively, ``hole2`` can be installed from the original HOLE_ website.
+
+.. _HOLE: http://www.holeprogram.org

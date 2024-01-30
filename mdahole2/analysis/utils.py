@@ -30,8 +30,6 @@ HOLE Analysis --- :mod:`mdahole2.analysis.utils`
 :Year: 2020
 :Copyright: GNU Public License v3
 
-.. versionadded:: 1.0
-
 Helper functions used in :mod:`mdahole2.analysis.hole`
 """
 import logging
@@ -307,8 +305,6 @@ def set_up_hole_input(pdbfile,
     -------
     str
         input text to run HOLE
-
-    .. versionadded:: 1.0
 
     """.format(IGNORE_RESIDUES)
     short_filename = check_and_fix_long_filename(pdbfile, tmpdir=tmpdir)
