@@ -11,7 +11,9 @@ Welcome to mdahole2's documentation!
    :caption: Contents:
 
    getting_started
+   usage
    api
+   references
 
 Indices and tables
 ==================

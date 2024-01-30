@@ -22,7 +22,6 @@
   <title>Index &mdash; mdahole2  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=97281a00" />
 
   
     <link rel="shortcut icon" href="_static/mdanalysis-logo.ico"/>
@@ -81,7 +80,9 @@
         <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
 </div>
@@ -122,12 +123,14 @@
  | <a href="#O"><strong>O</strong></a>
  | <a href="#P"><strong>P</strong></a>
  | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#W"><strong>W</strong></a>
  
 </div>
 <h2 id="B">B</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.bin_radii">bin_radii() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.bin_radii">bin_radii() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -135,15 +138,25 @@
 <h2 id="C">C</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.create_vmd_surface">create_vmd_surface() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.utils.check_and_fix_long_filename">check_and_fix_long_filename() (in module mdahole2.analysis.utils)</a>
 </li>
+      <li><a href="api.html#mdahole2.analysis.utils.collect_hole">collect_hole() (in module mdahole2.analysis.utils)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#mdahole2.analysis.utils.create_vmd_surface">create_vmd_surface() (in module mdahole2.analysis.utils)</a>
+
+      <ul>
+        <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.create_vmd_surface">(mdahole2.analysis.hole.HoleAnalysis method)</a>
+</li>
+      </ul></li>
   </ul></td>
 </tr></table>
 
 <h2 id="D">D</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.delete_temporary_files">delete_temporary_files() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.delete_temporary_files">delete_temporary_files() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -164,11 +177,11 @@
 <h2 id="G">G</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.gather">gather() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.gather">gather() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.guess_cpoint">guess_cpoint() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.guess_cpoint">guess_cpoint() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -176,13 +189,13 @@
 <h2 id="H">H</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.histogram_radii">histogram_radii() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.histogram_radii">histogram_radii() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.hole">hole() (in module mdahole2.analysis)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.hole">hole() (in module mdahole2.analysis.hole)</a>
 </li>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis">HoleAnalysis (class in mdahole2.analysis)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis">HoleAnalysis (class in mdahole2.analysis.hole)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -191,21 +204,39 @@
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
       <li>
-    mdahole2.analysis
+    mdahole2.analysis.hole
 
       <ul>
-        <li><a href="api.html#module-mdahole2.analysis">module</a>
+        <li><a href="api.html#module-mdahole2.analysis.hole">module</a>
+</li>
+      </ul></li>
+      <li>
+    mdahole2.analysis.templates
+
+      <ul>
+        <li><a href="api.html#module-mdahole2.analysis.templates">module</a>
+</li>
+      </ul></li>
+      <li>
+    mdahole2.analysis.utils
+
+      <ul>
+        <li><a href="api.html#module-mdahole2.analysis.utils">module</a>
 </li>
       </ul></li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.min_radius">min_radius() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.min_radius">min_radius() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
       <li>
     module
 
       <ul>
-        <li><a href="api.html#module-mdahole2.analysis">mdahole2.analysis</a>
+        <li><a href="api.html#module-mdahole2.analysis.hole">mdahole2.analysis.hole</a>
+</li>
+        <li><a href="api.html#module-mdahole2.analysis.templates">mdahole2.analysis.templates</a>
+</li>
+        <li><a href="api.html#module-mdahole2.analysis.utils">mdahole2.analysis.utils</a>
 </li>
       </ul></li>
   </ul></td>
@@ -214,7 +245,7 @@
 <h2 id="O">O</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.over_order_parameters">over_order_parameters() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.over_order_parameters">over_order_parameters() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -224,17 +255,17 @@
   <td style="width: 33%; vertical-align: top;"><ul>
       <li><a href="api.html#index-0">PATH</a>, <a href="api.html#index-1">[1]</a>
 </li>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.plot">plot() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.plot">plot() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.plot3D">plot3D() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.plot3D">plot3D() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.plot3D_order_parameters">plot3D_order_parameters() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.plot3D_order_parameters">plot3D_order_parameters() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.plot_mean_profile">plot_mean_profile() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.plot_mean_profile">plot_mean_profile() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.plot_order_parameters">plot_order_parameters() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.plot_order_parameters">plot_order_parameters() (mdahole2.analysis.hole.HoleAnalysis method)</a>
 </li>
   </ul></td>
 </tr></table>
@@ -242,7 +273,27 @@
 <h2 id="R">R</h2>
 <table style="width: 100%" class="indextable genindextable"><tr>
   <td style="width: 33%; vertical-align: top;"><ul>
-      <li><a href="api.html#mdahole2.analysis.HoleAnalysis.run">run() (mdahole2.analysis.HoleAnalysis method)</a>
+      <li><a href="api.html#mdahole2.analysis.hole.HoleAnalysis.run">run() (mdahole2.analysis.hole.HoleAnalysis method)</a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#mdahole2.analysis.utils.run_hole">run_hole() (in module mdahole2.analysis.utils)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#mdahole2.analysis.templates.SIMPLE2_RAD">SIMPLE2_RAD (in module mdahole2.analysis.templates)</a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="W">W</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="api.html#mdahole2.analysis.utils.write_simplerad2">write_simplerad2() (in module mdahole2.analysis.utils)</a>
 </li>
   </ul></td>
 </tr></table>

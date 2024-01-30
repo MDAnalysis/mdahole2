@@ -23,7 +23,6 @@
   <title>Getting Started &mdash; mdahole2  documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
-      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=97281a00" />
 
   
     <link rel="shortcut icon" href="_static/mdanalysis-logo.ico"/>
@@ -40,7 +39,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="API Documentation" href="api.html" />
+    <link rel="next" title="Usage" href="usage.html" />
     <link rel="prev" title="Welcome to mdahole2’s documentation!" href="index.html" /> 
 </head>
 
@@ -87,9 +86,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#download-source-code">Download source code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#build-and-installation">Build and installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installing-hole2">Installing hole2</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">API Documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="references.html">References</a></li>
 </ul>
 
 </div>
@@ -120,19 +122,19 @@
   <section id="getting-started">
 <h1>Getting Started<a class="headerlink" href="#getting-started" title="Link to this heading"></a></h1>
 <p>This page details how to get started with <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code>.
-Note that <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> is only supported on Linux or macOS.</p>
+Note that <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> is currently only supported on Linux or macOS.</p>
 <section id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
-<p>Documentation is hosted on <a class="reference external" href="https://www.mdanalysis.org/hole2-mdakit/">GitHub Pages</a>.</p>
+<p>Documentation is hosted on <a class="reference external" href="https://www.mdanalysis.org/mdahole2/">GitHub Pages</a>.</p>
 </section>
 <section id="download-source-code">
 <h2>Download source code<a class="headerlink" href="#download-source-code" title="Link to this heading"></a></h2>
-<p>The <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> source code is hosted on <a class="reference external" href="https://github.com/MDAnalysis/hole2-mdakit">GitHub</a> and can be downloaded with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:MDAnalysis/hole2-mdakit.git
+<p>The <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> source code is hosted on <a class="reference external" href="https://github.com/MDAnalysis/mdahole2">GitHub</a> and can be downloaded with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:MDAnalysis/mdahole2.git
 </pre></div>
 </div>
 <p>with an SSH key, or with</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MDAnalysis/hole2-mdakit.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MDAnalysis/mdahole2.git
 </pre></div>
 </div>
 </section>
@@ -149,6 +151,16 @@ As such <code class="docutils literal notranslate"><span class="pre">conda-build
 </div>
 <p>to build the package and install the local build.</p>
 </section>
+<section id="installing-hole2">
+<h2>Installing hole2<a class="headerlink" href="#installing-hole2" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> requires the <code class="docutils literal notranslate"><span class="pre">hole2</span></code> executable to be installed.</p>
+<p>This is most easily done using <code class="docutils literal notranslate"><span class="pre">conda</span></code>, <code class="docutils literal notranslate"><span class="pre">mamba</span></code>, or a similar
+package manager. For example, to install <code class="docutils literal notranslate"><span class="pre">hole2</span></code> using <code class="docutils literal notranslate"><span class="pre">mamba</span></code>:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mamba<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>hole2
+</pre></div>
+</div>
+<p>Alternatively, <code class="docutils literal notranslate"><span class="pre">hole2</span></code> can be installed from the original <a class="reference external" href="http://www.holeprogram.org">HOLE</a> website.</p>
+</section>
 </section>
 
 
@@ -156,7 +168,7 @@ As such <code class="docutils literal notranslate"><span class="pre">conda-build
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="index.html" class="btn btn-neutral float-left" title="Welcome to mdahole2’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="api.html" class="btn btn-neutral float-right" title="API Documentation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="usage.html" class="btn btn-neutral float-right" title="Usage" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
