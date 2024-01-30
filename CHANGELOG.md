@@ -69,7 +69,7 @@ in the AUTHORS.md file.
 - IAlibay
 
 ### Added
-- the core functionality of mdahole2 (and its tests) was implemented
+- the core functionality of hole2-mdakit (and its tests) was implemented
   using the source code from MDAnalysis.analysis.hole2 (PR #1)
 - GitHub actions CI workflow (PR #2 #3 #7)
 - added historical authors from original source to AUTHORS.md (PR #4)
