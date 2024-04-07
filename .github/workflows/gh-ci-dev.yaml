@@ -33,7 +33,7 @@ jobs:
       - id: get-compatible-python
         uses: MDAnalysis/mdanalysis-compatible-python@main
         with:
-          release: "latest"
+          release: "develop"
 
   main-tests:
     if: "github.repository == 'MDAnalysis/mdahole2'"
@@ -43,7 +43,7 @@ jobs:
         matrix:
           os: [macOS-latest, ubuntu-latest]
           python-version: {% raw %}${{ fromJSON(needs.environment-config.outputs.python-matrix) }}{% endraw %}
-          mdanalysis-version: latest
+          mdanalysis-version: develop
 
     steps:
     - uses: actions/checkout@v3
