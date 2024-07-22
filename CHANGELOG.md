@@ -16,6 +16,14 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
+## Unreleased
+
+### Authors
+- IAlibay
+
+## Changed
+- Python 3.9 has now been dropped as per SPEC0
+
 ## [0.4.0] -- 2024-01-30
 
 ### Authors
