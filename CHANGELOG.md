@@ -16,13 +16,17 @@ The rules for this file:
   * accompany each entry with github issue/PR number (Issue #xyz)
 -->
 
-## Unreleased
+## [0.5.0] -- 2024-11-22
 
 ### Authors
 - IAlibay
 
-## Changed
+### Changed
 - Python 3.9 has now been dropped as per SPEC0
+- The license has now been changed to LGPLv2.1+
+
+### Added
+- Support for Python 3.13
 
 ## [0.4.0] -- 2024-01-30
 
