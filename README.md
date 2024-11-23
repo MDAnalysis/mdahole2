@@ -75,7 +75,8 @@ pip install -e ".[test,doc]"
 ### Copyright
 
 The mdahole2 source code is hosted at https://github.com/MDAnalysis/mdahole2
-and is available under the GNU General Public License, version 3 (see the file [LICENSE](https://github.com/MDAnalysis/mdahole2/blob/main/LICENSE)).
+and is available under the Lesser GNU Public Licence, v2.1 or any higher version
+(see the file [LICENSE](https://github.com/MDAnalysis/mdahole2/blob/main/LICENSE)).
 
 Copyright (c) 2022, The MDAnalysis Development Team and all contributors
                     listed in the file AUTHORS
