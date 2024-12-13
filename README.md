@@ -13,6 +13,26 @@ mdahole2 is bound by a [Code of Conduct](https://github.com/MDAnalysis/mdahole2/
 
 ### Installation
 
+From conda:
+```
+conda install conda-forge::mdahole2
+```
+
+In case you want to use an already installed version of [hole2](https://www.holeprogram.org/) built from [source](https://github.com/osmart/hole2) or by installing it from conda (`conda install conda-forge:: hole2`), you can use a version without `hole2` as dependency:
+```
+conda install conda-forge::mdahole2-base
+```
+
+Or install from pip:
+```
+pip install mdahole2
+
+```
+
+Note that `mdahole2` is only supported on Linux and macOS.
+
+#### From source
+
 To build `mdahole2` from source,
 we highly recommend using virtual environments.
 If possible, we strongly recommend that you use
@@ -20,9 +40,9 @@ If possible, we strongly recommend that you use
 Below we provide instructions both for `conda` and
 for `pip`.
 
-Note that `mdahole2` is only supported on Linux and macOS.
 
-#### With conda
+
+##### With conda
 
 Ensure that you have [conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed.
 
@@ -57,7 +77,7 @@ And when you are finished, you can exit the virtual environment with:
 conda deactivate
 ```
 
-#### With pip
+##### With pip
 
 To build the package from source, run:
 

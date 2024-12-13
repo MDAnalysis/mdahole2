@@ -11,8 +11,37 @@ Documentation is hosted on `GitHub Pages`_.
 
 .. _`GitHub Pages`: https://www.mdanalysis.org/mdahole2/
 
-Download source code
-~~~~~~~~~~~~~~~~~~~~
+Installation 
+~~~~~~~~~~~~~~~~~~~~~~
+
+``mdahole2`` can be installed in several ways:
+
+From conda
+----------
+
+The recommended way to install ``mdahole2`` is through conda:
+
+.. code:: bash
+
+    conda install conda-forge::mdahole2
+
+If you already have ``hole2`` installed and want to use that version, you can install ``mdahole2`` without the ``hole2`` dependency:
+
+.. code:: bash
+
+    conda install conda-forge::mdahole2-base
+
+From pip
+--------
+
+You can also install ``mdahole2`` using pip:
+
+.. code:: bash
+
+    pip install mdahole2
+
+Download and Build source code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The ``mdahole2`` source code is hosted on GitHub_ and can be downloaded with
 
@@ -28,23 +57,30 @@ with an SSH key, or with
 
 .. _GitHub: https://github.com/MDAnalysis/mdahole2
 
-Build and installation
-~~~~~~~~~~~~~~~~~~~~~~
+To build ``mdahole2`` from source, we highly recommend using virtual environments, preferably with `Anaconda`_.
 
-``mdahole2`` is currently only installable from source (although hosting on conda-forge is planned).
-As such ``conda-build`` is required. To download this utility, invoke:
+With conda:
 
 .. code:: bash
 
-	conda install conda-build
+    conda create --name mdahole2
+    conda activate mdahole2
+    conda env update --name mdahole2 --file devtools/conda-envs/test_env.yaml --file docs/requirements.yaml
+    pip install -e .
 
-From the repository root directory, run
+With pip:
 
 .. code:: bash
 
-	conda build . && conda install --use-local mdahole2
+    pip install -e .
 
-to build the package and install the local build.
+For development purposes, you can install additional test and documentation dependencies:
+
+.. code:: bash
+
+    pip install -e ".[test,doc]"
+
+.. _Anaconda: https://docs.conda.io/en/latest/
 
 Installing hole2
 ~~~~~~~~~~~~~~~~
