@@ -62,3 +62,6 @@ The rules for this file:
 - Tengyu Xie <@miss77jun>
 - Estefania Barreto-Ojeda <@ojeda-e>
 - Ian Kenney <@ianmkenney>
+
+**2025**
+- Rubén Chaves <@RubenChM>
