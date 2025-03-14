@@ -23,13 +23,13 @@ The recommended way to install ``mdahole2`` is through conda:
 
 .. code:: bash
 
-    conda install conda-forge::mdahole2
+    conda install -c conda-forge mdahole2
 
 If you already have ``hole2`` installed and want to use that version, you can install ``mdahole2`` without the ``hole2`` dependency:
 
 .. code:: bash
 
-    conda install conda-forge::mdahole2-base
+    conda install -c conda-forge mdahole2-base
 
 From pip
 --------

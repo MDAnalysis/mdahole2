@@ -15,12 +15,12 @@ mdahole2 is bound by a [Code of Conduct](https://github.com/MDAnalysis/mdahole2/
 
 From conda:
 ```
-conda install conda-forge::mdahole2
+conda install -c conda-forge mdahole2
 ```
 
-In case you want to use an already installed version of [hole2](https://www.holeprogram.org/) built from [source](https://github.com/osmart/hole2) or by installing it from conda (`conda install conda-forge:: hole2`), you can use a version without `hole2` as dependency:
+In case you want to use an already installed version of [hole2](https://www.holeprogram.org/) built from [source](https://github.com/osmart/hole2) or by installing it from conda (`conda install -c conda-forge hole2`), you can use a version without `hole2` as dependency:
 ```
-conda install conda-forge::mdahole2-base
+conda install -c conda-forge mdahole2-base
 ```
 
 Or install from pip:
