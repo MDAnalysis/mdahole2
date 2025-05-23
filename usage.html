@@ -23,7 +23,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Usage &mdash; mdahole2  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
 
   
@@ -138,8 +138,8 @@ This should be the case for the vast majority of installations
 through the recommended pathway of <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>.</p>
 <p>However, if you have installed <a class="reference external" href="http://www.holeprogram.org">HOLE</a> through a nonstandard pathway,
 then you will need to specify a path to your <code class="docutils literal notranslate"><span class="pre">hole</span></code> executable like so:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MDAnalysis.tests.datafiles</span> <span class="kn">import</span> <span class="n">PDB_HOLE</span>
-<span class="kn">from</span> <span class="nn">mdahole2.analysis</span> <span class="kn">import</span> <span class="n">hole</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">MDAnalysis.tests.datafiles</span><span class="w"> </span><span class="kn">import</span> <span class="n">PDB_HOLE</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mdahole2.analysis</span><span class="w"> </span><span class="kn">import</span> <span class="n">hole</span>
 
 <span class="n">profiles</span> <span class="o">=</span> <span class="n">hole</span><span class="p">(</span><span class="n">PDB_HOLE</span><span class="p">,</span> <span class="n">executable</span><span class="o">=</span><span class="s1">&#39;/path/to/hole&#39;</span><span class="p">)</span>
 </pre></div>
@@ -152,8 +152,8 @@ is in your <code class="docutils literal notranslate"><span class="pre">PATH</sp
 <section id="using-hole-on-a-pdb-file">
 <h2>Using HOLE on a PDB file<a class="headerlink" href="#using-hole-on-a-pdb-file" title="Link to this heading"></a></h2>
 <p>Use the <code class="docutils literal notranslate"><span class="pre">hole</span></code> function to run <a class="reference external" href="http://www.holeprogram.org">HOLE</a> on a single PDB file. For example:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">MDAnalysis.tests.datafiles</span> <span class="kn">import</span> <span class="n">PDB_HOLE</span>
-<span class="kn">from</span> <span class="nn">mdahole2.analysis</span> <span class="kn">import</span> <span class="n">hole</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">MDAnalysis.tests.datafiles</span><span class="w"> </span><span class="kn">import</span> <span class="n">PDB_HOLE</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mdahole2.analysis</span><span class="w"> </span><span class="kn">import</span> <span class="n">hole</span>
 
 <span class="n">profiles</span> <span class="o">=</span> <span class="n">hole</span><span class="p">(</span><span class="n">PDB_HOLE</span><span class="p">)</span>
 <span class="c1"># to create a VMD surface of the pore</span>
@@ -192,9 +192,9 @@ class. This behaves similarly to the <code class="docutils literal notranslate">
 arguments such as <code class="docutils literal notranslate"><span class="pre">cpoint</span></code> and <code class="docutils literal notranslate"><span class="pre">cvect</span></code> become runtime arguments for
 the <code class="xref py py-meth docutils literal notranslate"><span class="pre">run()</span></code> function.</p>
 <p>The class can be set-up and run like a normal MDAnalysis analysis class:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">MDAnalysis</span> <span class="k">as</span> <span class="nn">mda</span>
-<span class="kn">from</span> <span class="nn">MDAnalysis.tests.datafiles</span> <span class="kn">import</span> <span class="n">MULTIPDB_HOLE</span>
-<span class="kn">from</span> <span class="nn">mdahole2.analysis</span> <span class="kn">import</span> <span class="n">HoleAnalysis</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">MDAnalysis</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mda</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">MDAnalysis.tests.datafiles</span><span class="w"> </span><span class="kn">import</span> <span class="n">MULTIPDB_HOLE</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mdahole2.analysis</span><span class="w"> </span><span class="kn">import</span> <span class="n">HoleAnalysis</span>
 
 <span class="n">u</span> <span class="o">=</span> <span class="n">mda</span><span class="o">.</span><span class="n">Universe</span><span class="p">(</span><span class="n">MULTIPDB_HOLE</span><span class="p">)</span>
 
@@ -237,11 +237,11 @@ frames from the trajectory.</p>
 <h3>Analyzing a full trajectory<a class="headerlink" href="#analyzing-a-full-trajectory" title="Link to this heading"></a></h3>
 <p>To analyze a full trajectory and write pore surfaces for all frames to file
 <code class="file docutils literal notranslate"><span class="pre">hole_surface.vmd</span></code>, use</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">MDAnalysis</span> <span class="k">as</span> <span class="nn">mda</span>
-<span class="kn">from</span> <span class="nn">mdahole2.analysis</span> <span class="kn">import</span> <span class="n">HoleAnalysis</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">MDAnalysis</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">mda</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">mdahole2.analysis</span><span class="w"> </span><span class="kn">import</span> <span class="n">HoleAnalysis</span>
 
 <span class="c1"># load example trajectory MULTIPDB_HOLE</span>
-<span class="kn">from</span> <span class="nn">MDAnalysis.tests.datafiles</span> <span class="kn">import</span> <span class="n">MULTIPDB_HOLE</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">MDAnalysis.tests.datafiles</span><span class="w"> </span><span class="kn">import</span> <span class="n">MULTIPDB_HOLE</span>
 
 <span class="n">u</span> <span class="o">=</span> <span class="n">mda</span><span class="o">.</span><span class="n">Universe</span><span class="p">(</span><span class="n">MULTIPDB_HOLE</span><span class="p">)</span>
 
@@ -315,7 +315,7 @@ will use as the topology in VMD):</p>
 <p>Then write the actual trajectory in a convenient format such as TRR (or
 DCD). Note that we apply the same slicing (<code class="docutils literal notranslate"><span class="pre">start=1</span></code>, <code class="docutils literal notranslate"><span class="pre">stop=9</span></code>, <code class="docutils literal notranslate"><span class="pre">step=2</span></code>)
 to the trajectory itself and then use it as the value for the <code class="docutils literal notranslate"><span class="pre">frames</span></code>
-parameter of <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.write" title="(in MDAnalysis v2.8.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AtomGroup.write</span></code></a>
+parameter of <a class="reference external" href="https://docs.mdanalysis.org/stable/documentation_pages/core/groups.html#MDAnalysis.core.groups.AtomGroup.write" title="(in MDAnalysis v2.9.0)"><code class="xref py py-meth docutils literal notranslate"><span class="pre">AtomGroup.write</span></code></a>
 method:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">u</span><span class="o">.</span><span class="n">atoms</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;subsampled.trr&quot;</span><span class="p">,</span> <span class="n">frames</span><span class="o">=</span><span class="n">u</span><span class="o">.</span><span class="n">trajectory</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span>
 </pre></div>

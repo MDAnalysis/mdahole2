@@ -23,7 +23,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting Started &mdash; mdahole2  documentation</title>
-      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="_static/site.css" />
 
   
@@ -82,8 +82,12 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#download-source-code">Download source code</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#build-and-installation">Build and installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#from-conda">From conda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#from-pip">From pip</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#download-and-build-source-code">Download and Build source code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#installing-hole2">Installing hole2</a></li>
 </ul>
 </li>
@@ -125,8 +129,30 @@ Note that <code class="docutils literal notranslate"><span class="pre">mdahole2<
 <h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading"></a></h2>
 <p>Documentation is hosted on <a class="reference external" href="https://www.mdanalysis.org/mdahole2/">GitHub Pages</a>.</p>
 </section>
-<section id="download-source-code">
-<h2>Download source code<a class="headerlink" href="#download-source-code" title="Link to this heading"></a></h2>
+<section id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> can be installed in several ways:</p>
+<section id="from-conda">
+<h3>From conda<a class="headerlink" href="#from-conda" title="Link to this heading"></a></h3>
+<p>The recommended way to install <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> is through conda:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mdahole2
+</pre></div>
+</div>
+<p>If you already have <code class="docutils literal notranslate"><span class="pre">hole2</span></code> installed and want to use that version, you can install <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> without the <code class="docutils literal notranslate"><span class="pre">hole2</span></code> dependency:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>-c<span class="w"> </span>conda-forge<span class="w"> </span>mdahole2-base
+</pre></div>
+</div>
+</section>
+<section id="from-pip">
+<h3>From pip<a class="headerlink" href="#from-pip" title="Link to this heading"></a></h3>
+<p>You can also install <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> using pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>mdahole2
+</pre></div>
+</div>
+</section>
+</section>
+<section id="download-and-build-source-code">
+<h2>Download and Build source code<a class="headerlink" href="#download-and-build-source-code" title="Link to this heading"></a></h2>
 <p>The <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> source code is hosted on <a class="reference external" href="https://github.com/MDAnalysis/mdahole2">GitHub</a> and can be downloaded with</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>git@github.com:MDAnalysis/mdahole2.git
 </pre></div>
@@ -135,19 +161,22 @@ Note that <code class="docutils literal notranslate"><span class="pre">mdahole2<
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/MDAnalysis/mdahole2.git
 </pre></div>
 </div>
-</section>
-<section id="build-and-installation">
-<h2>Build and installation<a class="headerlink" href="#build-and-installation" title="Link to this heading"></a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> is currently only installable from source (although hosting on conda-forge is planned).
-As such <code class="docutils literal notranslate"><span class="pre">conda-build</span></code> is required. To download this utility, invoke:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>install<span class="w"> </span>conda-build
+<p>To build <code class="docutils literal notranslate"><span class="pre">mdahole2</span></code> from source, we highly recommend using virtual environments, preferably with <a class="reference external" href="https://docs.conda.io/en/latest/">Anaconda</a>.</p>
+<p>With conda:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>create<span class="w"> </span>--name<span class="w"> </span>mdahole2
+conda<span class="w"> </span>activate<span class="w"> </span>mdahole2
+conda<span class="w"> </span>env<span class="w"> </span>update<span class="w"> </span>--name<span class="w"> </span>mdahole2<span class="w"> </span>--file<span class="w"> </span>devtools/conda-envs/test_env.yaml<span class="w"> </span>--file<span class="w"> </span>docs/requirements.yaml
+pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
-<p>From the repository root directory, run</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda<span class="w"> </span>build<span class="w"> </span>.<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>conda<span class="w"> </span>install<span class="w"> </span>--use-local<span class="w"> </span>mdahole2
+<p>With pip:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span>.
 </pre></div>
 </div>
-<p>to build the package and install the local build.</p>
+<p>For development purposes, you can install additional test and documentation dependencies:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>-e<span class="w"> </span><span class="s2">&quot;.[test,doc]&quot;</span>
+</pre></div>
+</div>
 </section>
 <section id="installing-hole2">
 <h2>Installing hole2<a class="headerlink" href="#installing-hole2" title="Link to this heading"></a></h2>
